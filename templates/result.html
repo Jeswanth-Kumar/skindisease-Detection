@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Classification Result</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">CLASSIFICATION RESULTS</h1>
+            <div class="results">
+                
+                <div class="result">
+                    <h2>MODEL-1</h2>
+                    <h2>{{ result_2 }}</h2>
+					<h2>CONFIDENCE</h2>
+					<h2>{{prob_2 }}</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

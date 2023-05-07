@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skin Cancer Detection</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>SKIN CANCER DETECTION</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <input type="file" name="image">
+      <input type="submit" value="Detect">
+    </form>
+  </body>
+</html>
